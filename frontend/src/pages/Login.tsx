@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from "../components/Form";
 
-function Login() {
+const Login = () => {
   return <Form route='/api/token/' method='login'/>  
 };
 

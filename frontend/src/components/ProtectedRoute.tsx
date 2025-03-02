@@ -6,7 +6,7 @@ import { REFRESH_TOKEN, ACCESS_TOKEN } from '../constants';
 
 type RefreshResponse = { access: string };
 
-function ProtectedRoute({children}: { children: React.JSX.Element}) {
+const ProtectedRoute = ({children}: { children: React.JSX.Element}) => {
   const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null);
 
   useEffect(() => {

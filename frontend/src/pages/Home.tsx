@@ -4,7 +4,7 @@ import { Note } from "../components/Note";
 import '../styles/Home.css'
 import { Note as NoteType } from '../types';
 
-function Home() {
+const Home = () => {
   const [notes, setNotes] = useState<NoteType[]>([]);
   const [content, setContent] = useState('');
   const [title, setTitle] = useState('');
